@@ -1,1 +1,1 @@
-^# Leetcode-JavaScript
+# Leetcode-JavaScript
