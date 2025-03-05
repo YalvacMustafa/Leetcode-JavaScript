@@ -23,5 +23,14 @@ Follow-up: Could you solve the problem in linear time and in O(1) space?
  * @return {number}
  */
 var majorityElement = function(nums) {
-    
+    let count = 0;
+    let result = 0;
+    for (let num of nums){
+        if (count === 0){
+            result = num;
+        }
+        count += (num === result) ? 1 : -1;
+    }
+    return result;
 };
+console.log(majorityElement([1, 2, 3, 4, 5, 5, 6, 5, 6]));
